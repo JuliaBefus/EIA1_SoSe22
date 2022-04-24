@@ -1,6 +1,3 @@
-h1 {
-   font-weight: bold;
-}
 
 li {
     display: inline;
@@ -26,14 +23,14 @@ a:hover {
 
 nav li[current] a {
     color: white;
-    background-color: black;
+    background-color: transparent;
     text-decoration: underline;
 }
 
 .hintergrundbild {
     height: 400px;
     background-color: black;
-    background-image: url("./assets/foto/clouds-g63596b650_1920.jpg");
+    background-image: url("./assets/foto/clouds1.jpg");
     background-repeat: no-repeat, repeat;
     background-size: cover;
     top: 0;
@@ -48,28 +45,28 @@ nav ul {
 
 .nav .li {
     list-style-type: none;
-    background-color: white;
+    background-color: transparent;
 }
 
 .nav .li:hover {
-    background-color: black;
+    background-color: transparent;
     text-decoration: underline;
 }
 
 .nav .li:current {
-    background-color: black;
+    background-color: transparent;
 }
 
 footer{
     background-color: #eaeaea;
     font-size: smaller;
-    display: flex;
-    justify-content: space-between;
 }
 
 nav {
-    position: absolute;
-    right: 100px;
+    position:absolute;
+    right: 10px;
+    background-color: transparent;
+    top: 41px;
 }
 
 .wrapper {
@@ -77,6 +74,11 @@ nav {
     width: 800px;
     left: 50%;
     transform: translateX(-50%);
+}
+
+.zeilen {
+    display: flex;
+    justify-content: space-between;
 }
 
 #name {
