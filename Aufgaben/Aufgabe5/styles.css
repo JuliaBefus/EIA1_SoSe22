@@ -171,3 +171,13 @@ transform: scale(1.02);
     top:0;
     right: 0;
 }
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    font-size: 50px;
+}
+
+.schrift {
+    margin-bottom: -55px;
+}
