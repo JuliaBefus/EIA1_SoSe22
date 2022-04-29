@@ -124,7 +124,7 @@ input, textarea {
 }
 
 
-.css-slideshow img {
+.css-slides img {
 opacity: 0;
 animation-name: fade;
 animation-duration: 9s;
@@ -136,9 +136,9 @@ height: 400px;
 width: 1600px;
 }
 
-.css-slideshow img:nth-child(1) {animation-delay: 0;}
-.css-slideshow img:nth-child(2) {animation-delay: 3s;}
-.css-slideshow img:nth-child(3) {animation-delay: 6s;}
+.css-slides img:nth-child(1) {animation-delay: 0;}
+.css-slides img:nth-child(2) {animation-delay: 3s;}
+.css-slides img:nth-child(3) {animation-delay: 6s;}
 
 .card img {
     opacity: .6;
