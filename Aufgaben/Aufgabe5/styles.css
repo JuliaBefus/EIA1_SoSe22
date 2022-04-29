@@ -123,6 +123,7 @@ input, textarea {
     100% {opacity: 0;}
 }
 
+
 .css-slides img {
 opacity: 0;
 animation-name: fade;
