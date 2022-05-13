@@ -12,9 +12,16 @@ body {
     transition: all .3s;
 }
 
-.wrapper:hover, .wrapper.active {
+.wrapper:hover {
     transform: scale(1.1);
     opacity: 1;
+    color: white;
+    transition: all .3s;
+}
+
+.wrapper.active {
+    color: #ffcc00;
+
 }
 
 .row {
@@ -51,10 +58,14 @@ footer p {
     background: #ffffff80;
     margin-left: 50px;
 }
+
 .chartWrapper .chart {
     position: absolute;
     bottom: 0;
     width: 100%;
     height: 75%;
     background: #ffcc00;
+    transition: all 1s;
 }
+
+
