@@ -6,15 +6,20 @@ function playSample(soundQuelle: string): void {
 }
 
 function addClickListenerDrumpad(): void {
-    document.querySelector("#button1").addEventListener("click", function (): void { playSample("./assets/A.mp3"); });
-    document.querySelector("#button2").addEventListener("click", function (): void { playSample("./assets/C.mp3"); });
-    document.querySelector("#button3").addEventListener("click", function (): void { playSample("./assets/F.mp3"); });
-    document.querySelector("#button4").addEventListener("click", function (): void { playSample("./assets/G.mp3"); });
-    document.querySelector("#button5").addEventListener("click", function (): void { playSample("./assets/hithat.mp3"); });
-    document.querySelector("#button6").addEventListener("click", function (): void { playSample("./assets/kick.mp3"); });
-    document.querySelector("#button7").addEventListener("click", function (): void { playSample("./assets/laugh-1.mp3"); });
-    document.querySelector("#button8").addEventListener("click", function (): void { playSample("./assets/laugh-2.mp3"); });
-    document.querySelector("#button9").addEventListener("click", function (): void { playSample("./assets/snare.mp3"); });
+    document.querySelector("#button1").addEventListener("click", function (): void { playSample("./assets/DrumPad/A.mp3"); });
+    document.querySelector("#button2").addEventListener("click", function (): void { playSample("./assets/DrumPad/C.mp3"); });
+    document.querySelector("#button3").addEventListener("click", function (): void { playSample("./assets/DrumPad/F.mp3"); });
+    document.querySelector("#button4").addEventListener("click", function (): void { playSample("./assets/DrumPad/G.mp3"); });
+    document.querySelector("#button5").addEventListener("click", function (): void { playSample("./assets/DrumPad/hihat.mp3"); });
+    document.querySelector("#button6").addEventListener("click", function (): void { playSample("./assets/DrumPad/kick.mp3"); });
+    document.querySelector("#button7").addEventListener("click", function (): void { playSample("./assets/DrumPad/laugh-1.mp3"); });
+    document.querySelector("#button8").addEventListener("click", function (): void { playSample("./assets/DrumPad/laugh-2.mp3"); });
+    document.querySelector("#button9").addEventListener("click", function (): void { playSample("./assets/DrumPad/snare.mp3"); });
 }
 
-var beat: string[] = ["./assets/kick.mp3"];
+var beat: string[] = [
+    "./assets/DrumPad/kick.mp3",
+    "./assets/DrumPad/snare.mp3",
+    "./assets/DrumPad/hihat.mp3"
+];
+
