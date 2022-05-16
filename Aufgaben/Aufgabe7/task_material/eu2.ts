@@ -81,6 +81,7 @@ namespace Aufgabe7 {
 
 
 
+    
 
     document.querySelector("#deutschland")
         .addEventListener("click", function (): void {
