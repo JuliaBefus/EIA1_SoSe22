@@ -13,10 +13,22 @@ function addClickListenerDrumpad() {
     document.querySelector("#button7").addEventListener("click", function () { playSample("./assets/DrumPad/laugh-1.mp3"); });
     document.querySelector("#button8").addEventListener("click", function () { playSample("./assets/DrumPad/laugh-2.mp3"); });
     document.querySelector("#button9").addEventListener("click", function () { playSample("./assets/DrumPad/snare.mp3"); });
+    document.querySelector(".play").addEventListener("click", function () { playBeat(); });
 }
 var beat = [
     "./assets/DrumPad/kick.mp3",
     "./assets/DrumPad/snare.mp3",
     "./assets/DrumPad/hihat.mp3"
 ];
+function playBeat() {
+    beat;
+}
+var zaehler = 0;
+setInterval(function () {
+    playSample(beat[zaehler]);
+    zaehler = zaehler + 1;
+    if (zaehler === 3) {
+        zaehler = 0;
+    }
+}, 500);
 //# sourceMappingURL=drumpad.js.map

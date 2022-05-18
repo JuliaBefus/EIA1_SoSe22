@@ -15,6 +15,7 @@ function addClickListenerDrumpad(): void {
     document.querySelector("#button7").addEventListener("click", function (): void { playSample("./assets/DrumPad/laugh-1.mp3"); });
     document.querySelector("#button8").addEventListener("click", function (): void { playSample("./assets/DrumPad/laugh-2.mp3"); });
     document.querySelector("#button9").addEventListener("click", function (): void { playSample("./assets/DrumPad/snare.mp3"); });
+    document.querySelector(".play").addEventListener("click", function (): void { playBeat(); });
 }
 
 var beat: string[] = [
@@ -22,4 +23,23 @@ var beat: string[] = [
     "./assets/DrumPad/snare.mp3",
     "./assets/DrumPad/hihat.mp3"
 ];
+
+function playBeat(): void {
+    beat
+}
+var zaehler: number = 0;
+
+
+setInterval(function (): void {
+
+    playSample (beat[zaehler]);
+    zaehler = zaehler + 1;
+    if (zaehler === 3) {
+        zaehler = 0;
+    }
+}, 500);
+    
+
+
+
 
