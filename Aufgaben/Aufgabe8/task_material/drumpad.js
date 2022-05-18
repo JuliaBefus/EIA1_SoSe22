@@ -20,15 +20,14 @@ var beat = [
     "./assets/DrumPad/snare.mp3",
     "./assets/DrumPad/hihat.mp3"
 ];
-function playBeat() {
-    beat;
-}
 var zaehler = 0;
-setInterval(function () {
-    playSample(beat[zaehler]);
-    zaehler = zaehler + 1;
-    if (zaehler === 3) {
-        zaehler = 0;
-    }
-}, 500);
+function playBeat() {
+    setInterval(function () {
+        playSample(beat[zaehler]);
+        zaehler++;
+        if (zaehler === 3) {
+            zaehler = 0;
+        }
+    }, 500);
+}
 //# sourceMappingURL=drumpad.js.map

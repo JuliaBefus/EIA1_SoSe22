@@ -24,21 +24,20 @@ var beat: string[] = [
     "./assets/DrumPad/hihat.mp3"
 ];
 
-function playBeat(): void {
-    beat
-}
 var zaehler: number = 0;
 
+function playBeat(): void {
+    setInterval(function (): void {
+        playSample (beat[zaehler]);
+        zaehler ++;
+        if (zaehler === 3) {
+            zaehler = 0;
+        }
+    }, 500);
+}
 
-setInterval(function (): void {
 
-    playSample (beat[zaehler]);
-    zaehler = zaehler + 1;
-    if (zaehler === 3) {
-        zaehler = 0;
-    }
-}, 500);
-    
+
 
 
 
