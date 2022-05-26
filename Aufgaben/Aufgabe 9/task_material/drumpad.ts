@@ -85,7 +85,7 @@ namespace Aufgabe9 {
         var i: number = 0;
         while (i < toeneTotal) {
         var item: string = alleToene[Math.floor(Math.random() * alleToene.length)];
-        beat.push(item);
+        alleToene.push(item);
         i = i + 1;
         }
         intervalId = setInterval(function (): void {

@@ -72,7 +72,7 @@ var Aufgabe9;
         var i = 0;
         while (i < toeneTotal) {
             var item = alleToene[Math.floor(Math.random() * alleToene.length)];
-            beat.push(item);
+            alleToene.push(item);
             i = i + 1;
         }
         intervalId = setInterval(function () {
