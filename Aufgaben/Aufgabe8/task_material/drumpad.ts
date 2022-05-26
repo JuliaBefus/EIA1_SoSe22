@@ -1,3 +1,4 @@
+namespace Aufgabe8 {
 window.addEventListener("load", addClickListenerDrumpad);
 
 function playSample(soundQuelle: string): void {
@@ -34,6 +35,7 @@ function playBeat(): void {
             zaehler = 0;
         }
     }, 500);
+}
 }
 
 
