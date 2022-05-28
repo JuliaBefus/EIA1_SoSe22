@@ -82,7 +82,7 @@ namespace Aufgabe9 {
         playing = true;
         var zaehler: number = 0;
         var toeneTotal: number = 3;
-        var i: number = 0;
+        let i: number = 0;
         while (i < toeneTotal) {
         var item: string = alleToene[Math.floor(Math.random() * alleToene.length)];
         alleToene.push(item);

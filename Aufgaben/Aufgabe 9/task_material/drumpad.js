@@ -69,7 +69,7 @@ var Aufgabe9;
         playing = true;
         var zaehler = 0;
         var toeneTotal = 3;
-        var i = 0;
+        let i = 0;
         while (i < toeneTotal) {
             var item = alleToene[Math.floor(Math.random() * alleToene.length)];
             alleToene.push(item);
