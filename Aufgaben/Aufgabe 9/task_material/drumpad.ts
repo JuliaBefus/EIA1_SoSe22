@@ -39,7 +39,7 @@ namespace Aufgabe9 {
         "./assets/DrumPad/snare.mp3"
     ];
 
-    var playing: boolean;
+    var playing: boolean = false;
 
     var intervalId: number;
 
@@ -70,9 +70,16 @@ namespace Aufgabe9 {
     var i: number = 0;
 
     function stopBeat(): void {
-        document.querySelector(".play i").classList.add("fa-play");
+        if (document.querySelector(".play i").classList.contains("fa-play")) {
+            document.querySelector(".play i").classList.add("fa-stop");
+            document.querySelector(".play i").classList.remove("fa-play");
+        }
+        
+        else {
         document.querySelector(".play i").classList.remove("fa-stop");
-
+        document.querySelector(".play i").classList.add("fa-play");
+        }
+        
         clearInterval(intervalId);
 
         playing = false;

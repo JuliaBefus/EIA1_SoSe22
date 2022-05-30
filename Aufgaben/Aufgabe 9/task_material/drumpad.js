@@ -34,7 +34,7 @@ var Aufgabe9;
         "./assets/DrumPad/laugh-2.mp3",
         "./assets/DrumPad/snare.mp3"
     ];
-    var playing;
+    var playing = false;
     var intervalId;
     function playSample(soundQuelle) {
         play(soundQuelle);
@@ -60,8 +60,14 @@ var Aufgabe9;
     }
     var i = 0;
     function stopBeat() {
-        document.querySelector(".play i").classList.add("fa-play");
-        document.querySelector(".play i").classList.remove("fa-stop");
+        if (document.querySelector(".play i").classList.contains("fa-play")) {
+            document.querySelector(".play i").classList.add("fa-stop");
+            document.querySelector(".play i").classList.remove("fa-play");
+        }
+        else {
+            document.querySelector(".play i").classList.remove("fa-stop");
+            document.querySelector(".play i").classList.add("fa-play");
+        }
         clearInterval(intervalId);
         playing = false;
     }
