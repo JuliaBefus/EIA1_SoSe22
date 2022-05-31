@@ -1,0 +1,28 @@
+body {
+    background-color: white;
+}
+
+h1 {
+color: rgb(251, 251, 251);
+font-family:'Tahoma';
+font-size: 40px;
+height: 100px;
+margin: 0px;
+padding: 0px;
+text-transform: uppercase;
+width: 100%;
+}
+
+.wrapper {
+text-align: center;
+}
+
+.text1 {
+    background-color: rgb(141, 161, 186);
+    background-size: cover;
+}
+
+#counterToDos {
+    color: rgb(141, 161, 186);
+}
+
