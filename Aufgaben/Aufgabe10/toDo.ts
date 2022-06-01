@@ -35,7 +35,7 @@ window.addEventListener("load", function (): void {
         checkbox.className = "checkBox";
         label.innerHTML = input.value;
         label.className = "divLabel";
-        trashButton.className = "fas fa-trash-alt";
+        trashButton.className = " fas fa-trash-alt";
 
 
         wrapper.appendChild(todoItem);
